@@ -1,0 +1,113 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#e6f0f9',
+          100: '#cce0f3',
+          200: '#99c2e6',
+          300: '#66a3da',
+          400: '#3385cd',
+          500: '#0066c1',
+          600: '#004080', // Main primary color
+          700: '#00356d',
+          800: '#002b4d',
+          900: '#00111a',
+        },
+        accent: {
+          50: '#fef9ed',
+          100: '#fdf3db',
+          200: '#fbe7b7',
+          300: '#f9db93',
+          400: '#f7cf6f',
+          500: '#f5c34b',
+          600: '#F5A623', // Main accent color
+          700: '#c9871c',
+          800: '#9c6815',
+          900: '#6e490f',
+        },
+        success: {
+          50: '#e6f7ec',
+          100: '#ccf0d9',
+          200: '#99e0b3',
+          300: '#66d18d',
+          400: '#33c167',
+          500: '#00b241',
+          600: '#008e34',
+          700: '#006b28',
+          800: '#00471b',
+          900: '#00240e',
+        },
+        warning: {
+          50: '#fff8e6',
+          100: '#fff1cc',
+          200: '#ffe399',
+          300: '#ffd566',
+          400: '#ffc733',
+          500: '#ffb900',
+          600: '#cc9400',
+          700: '#997000',
+          800: '#664b00',
+          900: '#332600',
+        },
+        error: {
+          50: '#faeaea',
+          100: '#f5d5d5',
+          200: '#ebabab',
+          300: '#e08080',
+          400: '#d65656',
+          500: '#cc2c2c',
+          600: '#a32323',
+          700: '#7a1a1a',
+          800: '#521212',
+          900: '#290909',
+        },
+        neutral: {
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#e5e7eb',
+          300: '#d1d5db',
+          400: '#9ca3af',
+          500: '#6b7280',
+          600: '#4b5563',
+          700: '#374151',
+          800: '#1f2937',
+          900: '#111827',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        heading: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      spacing: {
+        '18': '4.5rem',
+        '68': '17rem',
+        '84': '21rem',
+        '96': '24rem',
+        '128': '32rem',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.5s ease-in-out',
+        'slide-down': 'slideDown 0.3s ease-in-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
