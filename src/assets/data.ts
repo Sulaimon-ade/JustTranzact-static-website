@@ -44,7 +44,7 @@ export const timelineItems: TimelineItem[] = [
   {
     date: '2010',
     title: 'Company Founding',
-    description: 'Just Transact was established to provide innovative solutions in both energy and safety sectors.'
+    description: 'Just Tranzact was established to provide innovative solutions in both energy and safety sectors.'
   },
   {
     date: '2009',
