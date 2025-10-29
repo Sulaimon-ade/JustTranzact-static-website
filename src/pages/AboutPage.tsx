@@ -11,7 +11,7 @@ const AboutPage: React.FC = () => {
     <PageWrapper>
       {/* Hero Section */}
       <HeroBanner
-        title="About Just Transact"
+        title="About Just Tranzact"
         subtitle="Learn more about our journey, our mission, and the team behind our success."
         backgroundImage="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
@@ -23,7 +23,7 @@ const AboutPage: React.FC = () => {
             <div>
               <SectionTitle
                 title="Our Company"
-                subtitle="Just Transact was founded with a vision to provide integrated solutions that address both safety and energy needs of businesses across various industries."
+                subtitle="Just Tranzact was founded with a vision to provide integrated solutions that address both safety and energy needs of businesses across various industries."
               />
 
               <p className="text-neutral-600 mb-4">
@@ -52,7 +52,7 @@ const AboutPage: React.FC = () => {
             <div className="order-first lg:order-last">
               <img
                 src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Just Transact team"
+                alt="Just Tranzact team"
                 className="w-full h-auto rounded-lg shadow-md"
               />
             </div>
