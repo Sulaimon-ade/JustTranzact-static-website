@@ -37,7 +37,7 @@ const ContactPage: React.FC = () => {
                 logo={<ShieldCheck className="h-8 w-8" />}
                 company="Just Tranzact Ltd."
                 address="10th Floor C-Wing, Foreshore Towers No2, Osborne Road, Ikoyi, Lagos, Nigeria"
-                phone="+2348023143245"
+                phone="+2348078012228"
                 email="Info@justtranzactlimited.com"
               />
               
@@ -45,7 +45,7 @@ const ContactPage: React.FC = () => {
                 logo={<Zap className="h-8 w-8" />}
                 company="Just Tranzact Energy Ltd."
                 address="10th Floor C-Wing, Foreshore Towers No2, Osborne Road, Ikoyi, Lagos, Nigeria"
-                phone="+2348023143245"
+                phone="+2348078012228"
                 email="Info@justtranzactlimited.com"
               />
               
@@ -53,7 +53,7 @@ const ContactPage: React.FC = () => {
                 logo={<Store className="h-8 w-8" />}
                 company="Portwest Safety Shop"
                 address="10th Floor C-Wing, Foreshore Towers No2, Osborne Road, Ikoyi, Lagos, Nigeria"
-                phone="+2348023143245"
+                phone="+2348078012228"
                 email="Info@justtranzactlimited.com"
               />
             </div>
@@ -89,8 +89,8 @@ const ContactPage: React.FC = () => {
                   <h4 className="font-medium text-primary-600 mb-2">Emergency Support</h4>
                   <p className="text-neutral-600">
                     For urgent matters outside regular business hours, please call our emergency hotline at 
-                    <a href="tel:+2348007654321" className="text-primary-600 font-medium ml-1 hover:underline">
-                      +234 800 765 4321
+                    <a href="tel:+2348023143245" className="text-primary-600 font-medium ml-1 hover:underline">
+                      +2348023143245
                     </a>
                   </p>
                 </div>
