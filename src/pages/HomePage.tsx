@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
       {/* Hero Section */}
       <HeroBanner
         title="Comprehensive Safety and Energy Solutions"
-        subtitle="Just Transact provides integrated solutions for all your safety and energy needs through our specialized divisions."
+        subtitle="Just Tranzact provides integrated solutions for all your safety and energy needs through our specialized divisions."
         primaryButtonText="Explore Our Services"
         secondaryButtonText="Contact Us"
         primaryButtonAction={() => navigate('/services')}
@@ -59,7 +59,7 @@ const HomePage: React.FC = () => {
       <section className="py-16 bg-primary-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <SectionTitle
-            title="Why Choose Just Transact"
+            title="Why Choose Just Tranzact"
             subtitle="Our integrated approach ensures that all your safety and energy needs are met with the highest standards of quality and expertise."
             centered
             className="text-white"
