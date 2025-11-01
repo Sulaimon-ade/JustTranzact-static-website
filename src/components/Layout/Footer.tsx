@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           {/* Column 1: Logo and About */}
           <div className="col-span-1">
             <div className="mb-4 font-bold text-2xl">
-              Just<span className="text-accent-600">Transact</span>
+              Just<span className="text-accent-600">Tranzact</span>
             </div>
             <p className="text-neutral-300 mb-4">
               Providing comprehensive safety and energy solutions for businesses across industries.
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 text-accent-500 flex-shrink-0 mt-0.5" />
-                <a href="mailto:info@justtransact.com" className="text-neutral-300 hover:text-white transition-colors">
+                <a href="mailto:info@justtranzact.com" className="text-neutral-300 hover:text-white transition-colors">
                   Info@justtranzactlimited.com
                 </a>
               </div>
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-neutral-400 text-sm">
-            &copy; {new Date().getFullYear()} Just Transact. All rights reserved.
+            &copy; {new Date().getFullYear()} Just Tranzact. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-4 text-sm text-neutral-400">
             <a href="#" className="hover:text-white transition-colors">

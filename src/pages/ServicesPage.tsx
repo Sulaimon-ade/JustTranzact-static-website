@@ -20,7 +20,7 @@ const ServicesPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <SectionTitle
             title="Our Specialized Services"
-            subtitle="At Just Transact, we offer a wide range of integrated solutions through our three specialized divisions, each focused on different aspects of safety and energy management."
+            subtitle="At Just Tranzact, we offer a wide range of integrated solutions through our three specialized divisions, each focused on different aspects of safety and energy management."
             centered
           />
 
@@ -122,7 +122,7 @@ const ServicesPage: React.FC = () => {
                 Created to combat the rise of counterfeit products and educate buyers, the shop allows customers to physically examine and compare authentic Portwest gear. Our team provides tailored consultations to help individuals and organizations select the right protective equipment for their unique safety needs.              </p>
 
               <ul className="space-y-2 mb-6">
-              <em>Our offerings include:</em> <br />
+                <em>Our offerings include:</em> <br />
                 <li className="flex items-start">
                   <span className="text-accent-600 font-bold mr-2">•</span>
                   <span className="text-neutral-600">Wide range of Portwest safety equipment</span>

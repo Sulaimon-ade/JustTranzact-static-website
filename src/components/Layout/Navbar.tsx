@@ -41,9 +41,8 @@ const Navbar: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center">
@@ -51,7 +50,7 @@ const Navbar: React.FC = () => {
           <Link to="/" className="flex items-center">
             {/* TODO: Replace with actual logo */}
             <div className={`font-bold text-2xl ${isScrolled ? 'text-primary-700' : 'text-white'}`}>
-              Just<span className="text-accent-600">Transact</span>
+              Just<span className="text-accent-600">Tranzact</span>
             </div>
           </Link>
 
@@ -61,13 +60,12 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium ${
-                  isActive(link.path)
+                className={`px-3 py-2 rounded-md text-sm font-medium ${isActive(link.path)
                     ? 'bg-primary-600 text-white'
                     : isScrolled
-                    ? 'text-neutral-700 hover:bg-neutral-100'
-                    : 'text-white hover:bg-white/10'
-                }`}
+                      ? 'text-neutral-700 hover:bg-neutral-100'
+                      : 'text-white hover:bg-white/10'
+                  }`}
               >
                 {link.name}
               </Link>
@@ -96,20 +94,18 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden transition-all duration-300 overflow-hidden ${
-          isOpen ? 'max-h-screen bg-white shadow-lg' : 'max-h-0'
-        }`}
+        className={`md:hidden transition-all duration-300 overflow-hidden ${isOpen ? 'max-h-screen bg-white shadow-lg' : 'max-h-0'
+          }`}
       >
         <div className="px-4 pt-2 pb-4 space-y-1">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
-                isActive(link.path)
+              className={`block px-3 py-2 rounded-md text-base font-medium ${isActive(link.path)
                   ? 'bg-primary-600 text-white'
                   : 'text-neutral-700 hover:bg-neutral-100'
-              }`}
+                }`}
             >
               {link.name}
             </Link>

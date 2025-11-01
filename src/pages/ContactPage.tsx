@@ -29,7 +29,7 @@ const ContactPage: React.FC = () => {
             subtitle="We're here to help with all your safety and energy management needs. Reach out to the appropriate division or use our general contact form."
             centered
           />
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
             {/* Contact Cards */}
             <div className="space-y-8">
@@ -40,7 +40,7 @@ const ContactPage: React.FC = () => {
                 phone="+2348078012228"
                 email="Info@justtranzactlimited.com"
               />
-              
+
               <ContactCard
                 logo={<Zap className="h-8 w-8" />}
                 company="Just Tranzact Energy Ltd."
@@ -48,7 +48,7 @@ const ContactPage: React.FC = () => {
                 phone="+2348078012228"
                 email="Info@justtranzactlimited.com"
               />
-              
+
               <ContactCard
                 logo={<Store className="h-8 w-8" />}
                 company="Portwest Safety Shop"
@@ -57,11 +57,11 @@ const ContactPage: React.FC = () => {
                 email="Info@justtranzactlimited.com"
               />
             </div>
-            
+
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <ContactForm onSubmit={handleFormSubmit} />
-              
+
               {/* Support Info */}
               <div className="bg-primary-50 rounded-lg p-6 mt-8">
                 <h3 className="text-xl font-bold text-primary-700 mb-4">Customer Support Hours</h3>
@@ -74,7 +74,7 @@ const ContactPage: React.FC = () => {
                       Sunday: Closed
                     </p>
                   </div>
-                  
+
                   <div>
                     <h4 className="font-medium text-primary-600 mb-2">Technical Support</h4>
                     <p className="text-neutral-600">
@@ -84,13 +84,13 @@ const ContactPage: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="mt-4">
                   <h4 className="font-medium text-primary-600 mb-2">Emergency Support</h4>
                   <p className="text-neutral-600">
-                    For urgent matters outside regular business hours, please call our emergency hotline at 
-                    <a href="tel:+2348023143245" className="text-primary-600 font-medium ml-1 hover:underline">
-                      +2348023143245
+                    For urgent matters outside regular business hours, please call our emergency hotline at
+                    <a href="tel:+2348078012228" className="text-primary-600 font-medium ml-1 hover:underline">
+                      +2348078012228
                     </a>
                   </p>
                 </div>
@@ -108,15 +108,15 @@ const ContactPage: React.FC = () => {
             subtitle="Visit us at our headquarters in Lagos, where all our divisions are conveniently located to serve your safety and energy needs."
             centered
           />
-          
+
           <div className="mt-12 h-96 rounded-lg overflow-hidden shadow-md">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7277083770874!2d3.4334439!3d6.4432572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4cc4b1b09cd%3A0x710a6562e2a87669!2sForeshore%20Towers!5e0!3m2!1sen!2sus!4v1661528891702!5m2!1sen!2sus" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7277083770874!2d3.4334439!3d6.4432572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4cc4b1b09cd%3A0x710a6562e2a87669!2sForeshore%20Towers!5e0!3m2!1sen!2sus!4v1661528891702!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
               title="Google Maps"
             ></iframe>
           </div>
@@ -128,10 +128,10 @@ const ContactPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <SectionTitle
             title="Contact FAQs"
-            subtitle="Find answers to common questions about contacting and working with Just Transact."
+            subtitle="Find answers to common questions about contacting and working with Just Tranzact."
             centered
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-700 mb-3">What information should I provide when contacting you?</h3>
@@ -139,35 +139,35 @@ const ContactPage: React.FC = () => {
                 To help us assist you more efficiently, please include your name, company name, contact details, and a clear description of your requirements or inquiry.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-700 mb-3">How quickly can I expect a response?</h3>
               <p className="text-neutral-600">
                 We aim to respond to all inquiries within 24 business hours. For urgent matters, please call our dedicated phone lines for immediate assistance.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-700 mb-3">Can I schedule a consultation?</h3>
               <p className="text-neutral-600">
                 Yes, we offer free consultations to discuss your specific needs. Please mention in your message that you'd like to schedule a consultation, and our team will arrange it.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-700 mb-3">Do you offer site visits?</h3>
               <p className="text-neutral-600">
                 Yes, we provide on-site assessments to better understand your requirements and provide tailored solutions. This service is available for businesses within Nigeria.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-700 mb-3">How can I get a quote?</h3>
               <p className="text-neutral-600">
                 You can request a quote through our contact form, specifying your requirements. For more complex needs, we may arrange a consultation to ensure accuracy.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary-700 mb-3">Do you work with international clients?</h3>
               <p className="text-neutral-600">
