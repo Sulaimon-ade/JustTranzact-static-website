@@ -73,19 +73,19 @@ const EnergySolutionsPage: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="bg-white p-4 rounded-lg shadow border border-neutral-100">
+                 {/* <div className="bg-white p-4 rounded-lg shadow border border-neutral-100">
                     <div className="flex items-start">
                       <div className="bg-primary-100 rounded-full p-2 mr-3">
                         <Zap className="h-5 w-5 text-primary-600" />
                       </div>
-                      {/* <div>
+                      <div>
                         <h4 className="font-medium text-primary-700 mb-1">Renewable Integration</h4>
                         <p className="text-sm text-neutral-600">
                           Solutions for incorporating renewable energy sources into operations.
                         </p>
-                      </div> */}
+                      </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="bg-white p-4 rounded-lg shadow border border-neutral-100">
                     <div className="flex items-start">

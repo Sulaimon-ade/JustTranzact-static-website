@@ -75,7 +75,7 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Team Section
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <SectionTitle
@@ -96,7 +96,7 @@ const AboutPage: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Values Section */}
       <section className="py-16 bg-primary-50">
