@@ -1,21 +1,19 @@
 import React, { useState } from 'react';
-import { ContactFormProps } from '../../types';
 import Button from '../Common/Button';
 
-const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
+const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
-  
+
   const [errors, setErrors] = useState({
     name: '',
     email: '',
     message: '',
   });
-  
-  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -24,7 +22,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
       ...formData,
       [name]: value,
     });
-    
+
     // Clear error when user types
     if (errors[name as keyof typeof errors]) {
       setErrors({
@@ -37,12 +35,12 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
   const validate = () => {
     let valid = true;
     const newErrors = { name: '', email: '', message: '' };
-    
+
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
       valid = false;
     }
-    
+
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
       valid = false;
@@ -50,43 +48,41 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
       newErrors.email = 'Email is invalid';
       valid = false;
     }
-    
+
     if (!formData.message.trim()) {
       newErrors.message = 'Message is required';
       valid = false;
     }
-    
+
     setErrors(newErrors);
     return valid;
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (validate()) {
-      setIsSubmitting(true);
-      
-      // Simulate form submission
+      const { name, email, message } = formData;
+
+      // Construct WhatsApp message
+      const whatsappMessage = `Hello, good day! My name is ${name}. My email is ${email}. I would like to know more about your services. Here's my message:\n\n${message}`;
+
+      // Encode message for URL
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+
+      // Your business WhatsApp number (in international format, no '+')
+      const phoneNumber = '2348176620323';
+
+      // Redirect to WhatsApp
+      window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+
+      // Reset form and show success message
+      setFormData({ name: '', email: '', message: '' });
+      setSubmitSuccess(true);
+
       setTimeout(() => {
-        if (onSubmit) {
-          onSubmit(formData);
-        }
-        
-        setIsSubmitting(false);
-        setSubmitSuccess(true);
-        
-        // Reset form after successful submission
-        setFormData({
-          name: '',
-          email: '',
-          message: '',
-        });
-        
-        // Reset success message after 3 seconds
-        setTimeout(() => {
-          setSubmitSuccess(false);
-        }, 3000);
-      }, 1000);
+        setSubmitSuccess(false);
+      }, 3000);
     }
   };
 
@@ -110,7 +106,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           <p className="mt-1 text-sm text-error-500">{errors.name}</p>
         )}
       </div>
-      
+
       <div className="mb-4">
         <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-1">
           Email
@@ -129,7 +125,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           <p className="mt-1 text-sm text-error-500">{errors.email}</p>
         )}
       </div>
-      
+
       <div className="mb-6">
         <label htmlFor="message" className="block text-sm font-medium text-neutral-700 mb-1">
           Message
@@ -148,20 +144,15 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           <p className="mt-1 text-sm text-error-500">{errors.message}</p>
         )}
       </div>
-      
+
       <div>
-        <Button
-          type="submit"
-          variant="primary"
-          disabled={isSubmitting}
-          fullWidth
-        >
-          {isSubmitting ? 'Sending...' : 'Send Message'}
+        <Button type="submit" variant="primary" fullWidth>
+          Send Message
         </Button>
-        
+
         {submitSuccess && (
           <p className="mt-3 text-sm text-success-600 text-center">
-            Your message has been sent successfully!
+            Redirecting to WhatsApp...
           </p>
         )}
       </div>

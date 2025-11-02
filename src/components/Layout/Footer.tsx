@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 text-accent-500 flex-shrink-0 mt-0.5" />
-                <a href="mailto:info@justtranzact.com" className="text-neutral-300 hover:text-white transition-colors">
+                <a href="mailto:info@justtranzactlimited.com" className="text-neutral-300 hover:text-white transition-colors">
                   Info@justtranzactlimited.com
                 </a>
               </div>

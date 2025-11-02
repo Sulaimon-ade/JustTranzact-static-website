@@ -68,50 +68,50 @@ export const timelineItems: TimelineItem[] = [
   // }
 ];
 
-export const teamMembers: TeamMember[] = [
-  {
-    // id: 1,
-    // name: 'James Wilson',
-    // role: 'CEO & Founder',
-    // bio: 'Industry veteran with over 20 years of experience in energy and safety solutions.',
-    // imageUrl: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300'
-  },
-  {
-    // id: 2,
-    // name: 'Sarah Johnson',
-    // role: 'Director of Safety Solutions',
-    // bio: 'Safety expert with strong background in regulatory compliance and training.',
-    // imageUrl: 'https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=300'
-  },
-  {
-    // id: 3,
-    // name: 'Michael Chen',
-    // role: 'Head of Energy Division',
-    // bio: 'Specialist in sustainable energy solutions with focus on efficiency and innovation.',
-    // imageUrl: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300'
-  },
-  {
-    // id: 4,
-    // name: 'Emily Rodriguez',
-    // role: 'Retail Operations Manager',
-    // bio: 'Retail expert overseeing the Portwest Safety Shop operations and customer experience.',
-    // imageUrl: 'https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=300'
-  },
-  {
-    // id: 5,
-    // name: 'David Singh',
-    // role: 'Technical Director',
-    // bio: 'Engineering specialist ensuring highest quality standards across all product lines.',
-    // imageUrl: 'https://images.pexels.com/photos/2426551/pexels-photo-2426551.jpeg?auto=compress&cs=tinysrgb&w=300'
-  },
-  {
-    // id: 6,
-    // name: 'Lauren Wright',
-    // role: 'Customer Relations',
-    // bio: 'Dedicated to exceptional service delivery and maintaining strong client relationships.',
-    // imageUrl: 'https://images.pexels.com/photos/1699419/pexels-photo-1699419.jpeg?auto=compress&cs=tinysrgb&w=300'
-  }
-];
+// export const teamMembers: TeamMember[] = [
+//   {
+//     // id: 1,
+//     // name: 'James Wilson',
+//     // role: 'CEO & Founder',
+//     // bio: 'Industry veteran with over 20 years of experience in energy and safety solutions.',
+//     // imageUrl: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300'
+//   },
+//   {
+//     // id: 2,
+//     // name: 'Sarah Johnson',
+//     // role: 'Director of Safety Solutions',
+//     // bio: 'Safety expert with strong background in regulatory compliance and training.',
+//     // imageUrl: 'https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=300'
+//   },
+//   {
+//     // id: 3,
+//     // name: 'Michael Chen',
+//     // role: 'Head of Energy Division',
+//     // bio: 'Specialist in sustainable energy solutions with focus on efficiency and innovation.',
+//     // imageUrl: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300'
+//   },
+//   {
+//     // id: 4,
+//     // name: 'Emily Rodriguez',
+//     // role: 'Retail Operations Manager',
+//     // bio: 'Retail expert overseeing the Portwest Safety Shop operations and customer experience.',
+//     // imageUrl: 'https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=300'
+//   },
+//   {
+//     // id: 5,
+//     // name: 'David Singh',
+//     // role: 'Technical Director',
+//     // bio: 'Engineering specialist ensuring highest quality standards across all product lines.',
+//     // imageUrl: 'https://images.pexels.com/photos/2426551/pexels-photo-2426551.jpeg?auto=compress&cs=tinysrgb&w=300'
+//   },
+//   {
+//     // id: 6,
+//     // name: 'Lauren Wright',
+//     // role: 'Customer Relations',
+//     // bio: 'Dedicated to exceptional service delivery and maintaining strong client relationships.',
+//     // imageUrl: 'https://images.pexels.com/photos/1699419/pexels-photo-1699419.jpeg?auto=compress&cs=tinysrgb&w=300'
+//   }
+// ];
 
 export const serviceIcons: ServiceIcon[] = [
   {
@@ -194,7 +194,7 @@ export const caseStudies: CaseStudy[] = [
     id: 1,
     title: 'Manufacturing Plant Energy Optimization',
     summary: 'Reduced energy consumption by 30% for a major manufacturing facility through comprehensive fuel management solutions and process optimization.',
-    imageUrl: 'https://www.dexma.com/wp-content/uploads/2023/05/EN-WP-Manufacturing-launch-featured-image.png',
+    imageUrl: 'https://media.licdn.com/dms/image/v2/D4E12AQEZoPOuEePdgg/article-cover_image-shrink_720_1280/B4EZaCulX2H0Bk-/0/1745949972501?e=2147483647&v=beta&t=bqisIUepCI15G1Iq7-7vAhmGZE67rOyOLBjmn0xrDrM',
     slug: 'manufacturing-energy-optimization'
   },
   {
